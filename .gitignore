@@ -1,4 +1,18 @@
-.idea
+# IDE
+/.idea
+
+# Composer
+/bin/composer
+/composer.phar
+
+# Yarn 2.x
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
 
 ###> symfony/framework-bundle ###
 /.env.local
