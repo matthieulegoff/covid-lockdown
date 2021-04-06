@@ -1,10 +1,6 @@
 # IDE
 /.idea
 
-# Composer
-/bin/composer
-/composer.phar
-
 # Yarn 2.x
 .yarn/*
 !.yarn/patches
