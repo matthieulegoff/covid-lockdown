@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="pt-5 text-center">
+        <h2>{{ result }}</h2>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <a href="{{ url('app_charts') }}"><i class="bi-question-circle" style="color: black;"></i></a>
+{% endblock %}

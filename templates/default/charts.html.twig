@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="pt-3 text-center">
+        <h2>
+            <i class="bi-question-circle"></i>
+        </h2>
+        <p class="pt-3 lead">
+            Voici les deux indicateurs pris en compte dans la décision.
+        </p>
+    </div>
+    <div class="pt-3">
+        <canvas
+                id="hospital"
+                data-hospital-dates="{{ hospitalDates | join(',') }}"
+                data-hospital-values="{{ hospitalValues | join(',') }}"
+        ></canvas>
+    </div>
+    <div class="pt-3">
+        <canvas
+                id="tests"
+                data-tests-dates="{{ testsDates | join(',') }}"
+                data-tests-values="{{ testsValues | join(',') }}"
+        ></canvas>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <a href="{{ url('app_index') }}" class="pr-3"><i class="bi-house-fill" style="color: black;"></i></a>
+    <a href="https://github.com/matthieulegoff"><i class="bi-github" style="color: black;"></i></a>
+{% endblock %}
