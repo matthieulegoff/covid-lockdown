@@ -13,13 +13,3 @@ import 'jquery';
 
 // Import Bootstrap framework
 import 'bootstrap';
-
-// Configure moment locale
-import moment from 'moment';
-moment.locale('fr');
-
-// Import Chart.js
-import 'chart.js';
-import 'chartjs-plugin-annotation';
-
-import './scripts/charts';

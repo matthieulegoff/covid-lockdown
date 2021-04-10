@@ -1,4 +1,12 @@
 
+// Configure moment locale
+import moment from 'moment';
+moment.locale('fr');
+
+// Import Chart.js
+import 'chart.js';
+import 'chartjs-plugin-annotation';
+
 $(document).ready(function() {
 
     generateChart(
@@ -29,6 +37,7 @@ $(document).ready(function() {
                 }]
             },
             options: {
+                responsive: true,
                 scales: {
                     xAxes: [{
                         type: 'time',
